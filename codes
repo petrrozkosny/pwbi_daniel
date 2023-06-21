@@ -1,0 +1,1 @@
+if Text.Start([acc_type],2)="XX" then "safari tent" else if Text.Start([acc_type],1) = "G" then "glamour tent" else if Text.Start([acc_type],1)="M" then "mobile house" else if Text.Start([acc_type],2)="HU" then "cabin" else "others"
