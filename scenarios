@@ -1,5 +1,13 @@
-1. I want to accept all incoming filters, do not want to add any. Use basic aggreation functions SUM(), MIN(), MAX() etc.
-2. I want to accept all incoming filters and add new ones. Use a combination of an "x" function with FILTER, so SUMX(FILTER()), MINX(FILTER()) etc.
-3. I want to disable all incoming filters, add none. Use a combination of "x" function with ALL(), so SUMX(ALL()), MINX(ALL()) etc.
-4. I want to disable at least one incoming filter and set up an own filter. Use combination of an "x" function with FILTER() and ALL().
-SUMX(FILTER(ALL())), MINX(FILTER(ALL())) etc.
+1. I want to keep all filters, i dont want to add a new one.
+Use simple agg. functions such as SUM(), MIN(), MAX()
+
+2. I want to keep all filters and add a new filter.
+Use a combination of CALCULATE(), FILTER()
+
+3. I want to remove one or more filters and I do not
+want to add a new ones.
+Use a combination of CALCULATE(), ALL()
+
+4. I want to change an existing filter, 
+Use a combination of CALCULATE() and a condition
+for example year = 2022
